@@ -1,0 +1,122 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+.topnav{
+	background-color:#000080;
+}
+.topnav .nav-item .nav-link{
+	color: white;
+}
+.topnav .nav-item .nav-link:hover{
+	letter-spacing:1.5px;}
+.head1
+{
+	
+	height:100vh;
+	clip-path: polygon(10% 0,30% 0,30% 30vh,70% 30vh,70% 0,90% 0,90% 100vh,70% 100vh,70% 70vh,30% 70vh,30% 100vh,10% 100vh);
+	margin-top:1%;
+}
+.title{
+	text-align: center;
+	font-size:10vw;
+	padding-top:33vh;
+	font-family: "Baloo";
+	color: white;
+	text-shadow: 2px 3px #33ccff;
+
+}
+
+#b{
+	animation:b 6s 1;
+}
+@keyframes b{
+    0%{font-size:10vw;}
+    20%{font-size:15vw;text-shadow: 2px 2px #00001a;color:#ff9900;}
+    40%{font-size:10vw;}
+    60%{font-size:10vw;}
+    80%{font-size:10vw;}
+    100%{font-size:10vw;}
+}
+#c{
+	animation:c 6s 1;
+}
+@keyframes c{
+    0%{font-size:10vw;}
+    20%{font-size:10vw;}
+    40%{font-size:10vw;}
+    60%{font-size:15vw;text-shadow: 2px 2px #00001a;color:#ff9900;}
+    80%{font-size:10vw;}
+    100%{font-size:10vw;}
+}
+#d{
+	animation:d 6s 1;
+}
+@keyframes d{
+    0%{font-size:10vw;}
+    20%{font-size:10vw;}
+    40%{font-size:10vw;}
+    60%{font-size:10vw;}
+    80%{font-size:10vw;}
+    100%{font-size:15vw;text-shadow: 2px 2px #00001a;color:#ff9900;}
+}
+.heading-primary--main{
+	font-size:6vw;
+	margin-top:7vw;
+	text-align: center;
+	color:white;
+	text-shadow: 1px 1px yellow;
+	font-weight: 400;
+	visibility: hidden;
+	animation-fill-mode: forwards;
+	animation-name: moveInLeft;
+	animation-delay: 6s;
+	animation-duration:1s;
+	animation-timing-function: ease-out;}
+	/*
+	animation-iteration-count: 3;
+	animation-delay: 3s;
+	*/
+@keyframes moveInLeft{
+	0%{
+		visibility: visible;
+		opacity: 0;
+		transform: translateX(-100px) rotate(0deg);
+	}
+/*	60%{
+		transform: rotate(180deg);
+	}*/
+	80%{
+		visibility: visible;
+		transform:translateX(10px);
+	}
+	100%{
+		visibility: visible;
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+.text{
+	font-size:15px;
+	font-family: Arial;
+}
+.filterDiv {
+  float: left;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+.show {
+  display: block;
+}
+@media (min-width: 544px) {
+	.heading-primary--main{font-size:5vw;}
+	.text{font-size:18px;}
+}
+@media (min-width:768px) {
+	.heading-primary--main{font-size:3vw;}
+}
+@media (min-width:992px) {
+	.heading-primary--main{font-size:2.5vw;margin-top:0;}
+}
